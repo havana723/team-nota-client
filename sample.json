@@ -1,0 +1,29 @@
+{
+  "author": "havana723",
+  "title": "Teamnote Sample",
+  "subtitle": "sample teamnote for team-nota",
+  "layout": "horizontal-2",
+  "header": {
+    "leftTop": "solved.ac - havana723",
+    "rightTop": "#Page"
+  },
+  "categories": [
+    {
+        "title": "Introduction",
+        "contents" : [
+            {
+                "author": "havana723",
+                "title": "intro",
+                "text": "This it text section. You can use it to add additional explanation, or for reminder"
+            },
+            {
+                "author": "havana723",
+                "title": "template",
+                "explanation": "brief explanation for algorithm",
+                "code": "#include <bits/stdc++.h>\n\n#define FastIO ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);\n#define endl '\n'\n#define ends ' '\n#define int long long\n#define FF first\n#define SS second\n#define pii pair<int,int>\n#define tiii tuple<int,int,int>\n#define sz(v) (int)(v).size()\n#define all(x) (x).begin(), (x).end()\n#define rall(x) (x).rbegin(), (x).rend()\n#define compress(v) sort(all(v)), (v).erase(unique(all(v)), (v).end())\n\n//////Constants//////////////////////////////////////////////////////////////////////////\n\nconst int MOD = 1e9 + 7;\nconst int INF = 0x3f3f3f3f;\nconst int LINF = 987654321987654321LL;\n\n//2d graph search////////////////////////////////////////////////////////////////////\n\nconst int dx[] = {-1, 1, 0, 0, 1, 1, -1, -1};\nconst int dy[] = {0, 0, -1, 1, 1, -1, 1, -1};\n\nbool inrange(int i, int j, int n, int m) { return 0 <= i && i < n && 0 <= j && j < m; }\n\nusing namespace std;\n\nint T, n;\n\nint32_t main(void) {\n    FastIO;\n\n#ifdef HN\n    freopen(\"_run/in.txt\", \"r\", stdin), freopen(\"_run/out.txt\", \"w\", stdout);\n#endif\n\n    T = 1;\n    //cin >> T;\n\n    while (T--) {\n    }\n\n    return 0;\n}\n",
+                "language": "cpp"
+            }
+        ]
+    }
+  ]
+}
