@@ -14,12 +14,14 @@ export interface TeamnoteCategory {
 
 export type TeamnoteContent = TeamnoteAlgorithm | TeamnoteText;
 
+export type TeamnoteLanguage = "cpp" | "c" | "python" | "java" | "kotlin";
+
 export interface TeamnoteAlgorithm {
   author: string;
   title: string;
   explanation?: string;
   code: string;
-  language: "cpp" | "c" | "python" | "java" | "kotlin";
+  language: TeamnoteLanguage;
 }
 
 export interface TeamnoteText {
@@ -28,16 +30,18 @@ export interface TeamnoteText {
   text: string;
 }
 
+export type TeamnoteLayout =
+  | "horizontal-1"
+  | "horizontal-2"
+  | "horizontal-3"
+  | "vertical-1"
+  | "vertical-2";
+
 export interface Teamnote {
   author: string;
   title: string;
   subtitle?: string;
-  layout:
-    | "horizontal-1"
-    | "horizontal-2"
-    | "horizontal-3"
-    | "vertical-1"
-    | "vertical-2";
+  layout: TeamnoteLayout;
   header: TeamnoteHeader;
   categories: TeamnoteCategory[];
 }
