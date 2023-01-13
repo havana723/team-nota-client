@@ -10,7 +10,7 @@ const App: React.FC = () => {
   return (
     <>
       <Layout>
-        <Page layout={teamnote.layout} />
+        <Page teamnote={teamnote} />
       </Layout>
     </>
   );

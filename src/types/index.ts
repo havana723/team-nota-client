@@ -20,14 +20,17 @@ export interface TeamnoteAlgorithm {
   author: string;
   title: string;
   explanation?: string;
+  timeComplexity?: string;
   code: string;
   language: TeamnoteLanguage;
+  type: "algorithm";
 }
 
 export interface TeamnoteText {
   author: string;
   title: string;
   text: string;
+  type: "text";
 }
 
 export type TeamnoteLayout =
